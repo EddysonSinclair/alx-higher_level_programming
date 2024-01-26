@@ -1,3 +1,5 @@
 #!/usr/bin/python3
 number = 98
-print(f"{number} Battery Street \n")
+# store the variable battery street in a variable and print using F string
+street = 'Battery street'
+print(f"{number} {street} \n")
