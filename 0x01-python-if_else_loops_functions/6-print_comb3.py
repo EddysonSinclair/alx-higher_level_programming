@@ -4,4 +4,4 @@ for i in range(9):
         if i < 8:
             print("{}{}".format(i % 10, j % 10),end=", ")
         else:
-            print("{}{}".format(i % 10, j % 10),end="\n ")
+            print("{}{}".format(i % 10, j % 10),end="\n")
