@@ -4,10 +4,9 @@ if __name__ == "__main__":
     num = len(argv)
     if num == 2:
         print("{:d} argument".format(num - 1))
-        print("{:d}: {}".format(num - 1, argv[1]))
     elif num > 2:
         print("{:d} arguments".format(num - 1))
-        for i in range(1, num):
-            print("{:d}: {}".format(i, argv[i]))
     else:
         print("{:d} arguments".format(num - 1))
+    for i in range(1, num):
+        print("{:d}: {}".format(i, argv[i]))
