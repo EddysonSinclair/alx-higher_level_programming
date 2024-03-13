@@ -3,6 +3,8 @@ def multiple_returns(sentence):
     first = sentence[0]
     if sentence == None:
         first = None
-        return (length, First)
+        newtup = (length, first)
+        return (newtup)
     else:
-        return (length, first)
+        newtup = (length, first)
+        return (newtup)
