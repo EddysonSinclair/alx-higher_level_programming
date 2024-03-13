@@ -11,6 +11,3 @@ def add_tuple(tuple_a=(), tuple_b=()):
     sum_2 = b + d
     newtup = (sum_1, sum_2)
     return (newtup)
-
-
-
