@@ -10,7 +10,7 @@ int is_palindrome(listint_t **head)
 {
 	if (head == NULL || *head == NULL)
 		return (1);
-	return (auxilary_palindrome, *head);
+	return (auxilary_palindrome(head, *head));
 }
 /**
  * auauxilary_palindrome - function  to know if a number is a palindrome
@@ -18,11 +18,11 @@ int is_palindrome(listint_t **head)
  * @end: end list
  * Return: integer
  */
-int auauxilary_palindrome(listint_t **head, listint_t *end)
+int auxilary_palindrome(listint_t **head, listint_t *end)
 {
 	if (end == NULL)
 		return (1);
-	if (auauxilary_palindrome(head, end->next) && (*head)->n == end->n)
+	if (auxilary_palindrome(head, end->next) && (*head)->n == end->n)
 	{
 		*head = (*head)->next;
 		return (1);
