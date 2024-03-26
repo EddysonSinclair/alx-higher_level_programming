@@ -19,7 +19,7 @@ def roman_to_int(roman_string):
 
         if (i != (len(roman_string) - 1) and
                 roman_dict[roman_string[i]] < roman_dict[roman_string[i + 1]]):
-            total -= roman_dict[roman_string[i]]
+            total += roman_dict[roman_string[i]] * -1
 
         else:
             total += roman_dict[roman_string[i]]
