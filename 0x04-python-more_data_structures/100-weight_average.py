@@ -10,5 +10,4 @@ def weight_average(my_list=[]):
         weight += element[1]
         if weight == 0:
             return (0)
-        else:
-            return (pdt_score/weight)
+    return (pdt_score/weight)
