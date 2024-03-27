@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 def roman_to_int(roman_string):
     """Converts a roman numeral to an integer."""
-    if not (isinstance(roman_string, str) or roman_string is None):
+    if not (isinstance(roman_string, str)):
         return (0)
     total = 0
     roman_dict = {
@@ -13,14 +13,13 @@ def roman_to_int(roman_string):
             'D': 500,
             'M': 1000
     }
-    for i in range(len(roman_string)):
-        if (roman_dict.get(roman_string[i]) == 0):
-            return (0)
-
-        if (i != (len(roman_string) - 1) and
-                roman_dict[roman_string[i]] < roman_dict[roman_string[i + 1]]):
-            total -= roman_dict[roman_string[i]]
-
+    prev = roman_dict[roman_string[0]]
+    for i in range(1, len(roman_string)):
+        current = roman_dict[roman_string[i]]
+        if prev < current:
+            total -= prev
         else:
-            total += roman_dict[roman_string[i]]
+            total += prev
+        prev = current
+    total += prev
     return (total)
