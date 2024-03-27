@@ -2,7 +2,7 @@
 def weight_average(my_list=[]):
     pdt_score = 0
     weight = 0
-    if my_list is None:
+    if my_list is None or len(my_list) == 0:
         return (0)
 
     for element in my_list:
