@@ -13,10 +13,10 @@ def safe_print_list(my_list=[], x=0):
     count = 0
     try:
         for i in range(x):
-            if my_list[i] <= x:
-                print("{:}".format(my_list[i]), end="")
-                count += 1
+            print("{:}".format(my_list[i]), end="")
+            count += 1
         print()
     except IndexError:
         pass
+        print()
     return (count)
