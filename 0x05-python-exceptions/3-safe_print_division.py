@@ -1,5 +1,7 @@
 #!/usr/bin/python3
 # 3-safe_print_division.py
+
+
 def safe_print_division(a, b):
     """Returns the division of a by b."""
     try:
@@ -8,4 +10,4 @@ def safe_print_division(a, b):
         result = None
     finally:
         print("Inside result: {}".format(result))
-    return(result)
+        return(result)
