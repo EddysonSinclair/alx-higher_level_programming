@@ -5,3 +5,4 @@ class Square:
     def __init__(self):
         """defines the square"""
         pass
+x = Square()
