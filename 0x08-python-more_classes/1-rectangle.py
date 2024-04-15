@@ -3,17 +3,15 @@
 
 
 class Rectangle:
-    """ This defiens a rectangle"""
+    """ This defines a rectangle"""
     def __init__(self, width=0, height=0):
         self.__width = width
         self.__height = height
 
-    """ this is the property getter for height"""
     @property
     def height(self):
         return(self.__height)
 
-    """ this is a setter for height"""
     @height.setter
     def height(self, value):
         if (not isinstance(value, int) and value is not None):
@@ -23,12 +21,10 @@ class Rectangle:
         else:
             self.__height = value
 
-    """This is the property getter for width"""
     @property
     def width(self):
         return(self.__width)
 
-    """ this is a setter for width"""
     @width.setter
     def width(self, value):
         if (not isinstance(value, int) and value is not None):
