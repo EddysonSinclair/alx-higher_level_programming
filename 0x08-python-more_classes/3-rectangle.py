@@ -49,13 +49,10 @@ class Rectangle:
     def __str__(self):
         rec = ""
         if self.__height == 0 or self.__width == 0:
-            return rec
+            return ("")
         else:
             for row in range(self.__height):
                 for column in range(self.__width):
-                    rec += "#"
+                    rec += '#'
                 rec += '\n'
             return rec
-
-    def __repr__(self):
-        return f"Rectangle(width={self.__width}, height={self.__height})"
