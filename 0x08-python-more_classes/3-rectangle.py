@@ -40,7 +40,7 @@ class Rectangle:
         return self.__height * self.__width
 
     def perimeter(self):
-        """ function to calc area of a rectangle"""
+        """ function to calc perimeter of a rectangle"""
         if self.__height == 0 or self.__width == 0:
             return 0
         else:
@@ -56,3 +56,6 @@ class Rectangle:
                     rec += "#"
                 rec += '\n'
             return rec
+    def __repr__(self):
+        return f"Rectangle(width={self.__width}, height={self.__height})"
+
