@@ -51,12 +51,12 @@ class Rectangle:
 
         Represents the rectangle with the # character.
         """
-        rec = ""
         if self.__height == 0 or self.__width == 0:
             return ("")
         else:
-            for row in range(self.__height):
-                for column in range(self.__width):
+            rec = ""
+            for row in range(0, self.__height):
+                for column in range(0, self.__width):
                     rec += '#'
                 rec += '\n'
             return rec
