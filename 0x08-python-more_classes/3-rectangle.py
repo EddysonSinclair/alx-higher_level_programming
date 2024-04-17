@@ -53,10 +53,10 @@ class Rectangle:
         """
         if self.__height == 0 or self.__width == 0:
             return ("")
-        else:
-            rec = ""
-            for row in range(0, self.__height):
-                for column in range(0, self.__width):
-                    rec += '#'
-                rec += '\n'
-            return rec
+
+        rec = ""
+        for row in range(0, self.__height):
+            for column in range(0, self.__width):
+                rec += '#'
+            rec += '\n'
+        return rec
