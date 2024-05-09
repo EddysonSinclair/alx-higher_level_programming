@@ -1,15 +1,24 @@
 #3-say_my_name.txt
 
->>> say_my_name = __import__('3-say_my_name').say_my_name
+>>> from 3-say_my_name import say_my_name
+
+# Documentation for the module
+>>> print(__import__('3-say_my_name').__doc__)
+This module defines a function that prints a formatted string with the given first and last names.
+
+# Documentation for the function
+>>> print(say_my_name.__doc__)
+Prints a formatted string with the given first and last names.
+
+# Test cases
 >>> say_my_name("John", "Smith")
 My name is John Smith
 
 >>> say_my_name("Abel", "Ada")
 My name is Abel Ada
 
-
 >>> say_my_name("sam")
-My name is sam 
+My name is sam
 
 >>> say_my_name("John", 1)
 Traceback (most recent call last):
