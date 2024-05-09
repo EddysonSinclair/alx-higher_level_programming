@@ -18,8 +18,5 @@ def say_my_name(first_name, last_name=""):
         raise TypeError("last_name must be a string")
     elif not last_name:
         print("My name is {}".format(first_name))
-    elif say_my_name is None:
-        raise TypeError("say_my_name() missing 1 required positional"
-                        "argument: 'first_name'")
     else:
         print("My name is {} {}".format(first_name, last_name))
