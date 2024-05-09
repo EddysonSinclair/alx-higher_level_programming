@@ -1,7 +1,6 @@
 #!/usr/bin/python3
-"""
-This is a function that prints two arguments {first_name} and {last_name}
-"""
+# 3-say_my_name.py
+""" This is a function that prints two arguments {first_name} and {last_name}"""
 
 
 def say_my_name(first_name, last_name=""):
