@@ -20,9 +20,8 @@ This modules defines a function ``say_my_name(first_name, last_name="")``.
 The 'last_name' parameter is optional
 
 ::
-
-	>>> say_my_name("sam")
-	My name is sam
+	>>> say_my_name("Brennan")
+	My name is Brennan 
 
 =======
 ERRORS
