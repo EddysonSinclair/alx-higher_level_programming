@@ -11,7 +11,6 @@ My name is John Smith
 >>> say_my_name("Abel", "Ada")
 My name is Abel Ada
 
-
 >>> say_my_name("sam")
 My name is sam
 
